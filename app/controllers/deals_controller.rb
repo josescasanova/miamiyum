@@ -6,6 +6,8 @@ class DealsController < ApplicationController
       # binding.pry
       marker.lat deal.merchant.latitude
       marker.lng deal.merchant.longitude
+      marker.infowindow deal.title
     end
   end
+  
 end

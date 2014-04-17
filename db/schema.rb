@@ -11,10 +11,10 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140417221539) do
+ActiveRecord::Schema.define(version: 20140417224137) do
 
   create_table "deals", force: true do |t|
-    t.string   "deal_title"
+    t.string   "title"
     t.string   "category"
     t.string   "deal_url"
     t.string   "image_url"
