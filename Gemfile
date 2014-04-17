@@ -14,6 +14,7 @@ gem 'sqoot'
 gem 'figaro'
 gem 'httparty'
 gem 'gmaps4rails'
+gem 'bootstrap-sass', '~> 3.1.1'
 
 group :development do
   gem 'sqlite3'
