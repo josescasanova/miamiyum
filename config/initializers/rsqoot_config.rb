@@ -4,5 +4,5 @@ RSqoot.configure do |config|
   config.base_api_url          = 'http://api.sqoot.com/v2/'
   config.authentication_method = :header
   config.read_timeout          = 60.seconds
-  config.expired_in            = 1.hour
+  config.expired_in            = 1.second
 end
