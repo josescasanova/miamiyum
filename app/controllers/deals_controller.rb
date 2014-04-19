@@ -7,7 +7,7 @@ class DealsController < ApplicationController
     @hash = Gmaps4rails.build_markers(@deals) do |deal, marker|
       marker.lat deal.merchant.latitude
       marker.lng deal.merchant.longitude
-      marker.infowindow deal.title
+      marker.infowindow gmaps4rails_infowindow(deal)
       marker.picture({
         "url" => "http://i.imgur.com/ea9rWJi.png",
         "width" => 32,
@@ -51,6 +51,14 @@ class DealsController < ApplicationController
         x.destroy!
       end
     end
+  end
+
+  def gmaps4rails_infowindow(deal)
+    "<a href=\"#{deal.deal_url}\"><center><h4>#{deal.title}</h4>                      <br/>
+    <img height=\"150\" width=\"150\" src=\"#{deal.image_url}\"></a>            <br/>
+    <b>Price: $#{deal.price}</b>                       <br/>
+    <i>Value: $#{deal.value} </i>                <br/><br/>
+    <b>#{deal.merchant.name}</b><br/></center>"    
   end
 
 end
