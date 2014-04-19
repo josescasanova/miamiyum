@@ -12,12 +12,6 @@ class DealsController < ApplicationController
         "url" => "http://i.imgur.com/ea9rWJi.png",
         "width" => 32,
         "height" => 37})
-  # TODO
-  # make map nice
-  # add fork for market
-  # create infobox
-  # add tests
-  # add resque_mailer for daily digest
     end
   end
 
