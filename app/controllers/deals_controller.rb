@@ -8,10 +8,16 @@ class DealsController < ApplicationController
       marker.lat deal.merchant.latitude
       marker.lng deal.merchant.longitude
       marker.infowindow deal.title
-      # marker.picture({
-      #   "url" => "http://i.imgur.com/aHTyCas.png",
-      #   "width" => 16,
-      #   "height" => 50})
+      marker.picture({
+        "url" => "http://i.imgur.com/ea9rWJi.png",
+        "width" => 32,
+        "height" => 37})
+  # TODO
+  # make map nice
+  # add fork for market
+  # create infobox
+  # add tests
+  # add resque_mailer for daily digest
     end
   end
 
