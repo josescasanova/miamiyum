@@ -1,3 +1,15 @@
 == MiamiYum
 
 Aggregated daily deals for only restaurants in Miami.
+
+== Features + Functionality
+- Uses the Sqoot API to get deals
+- Incorporated Bootstrap for clean and responsive design
+- Uses gmaps4rails gem to generate map
+- Incorporates Mailchimp to collect email address
+
+Coming soon
+- Rspec for test coverage
+- Background job to send a weekly digest to Mailchimp email list of deals
+-- https://github.com/jmettraux/rufus-scheduler
+- Auto post deals to a twitter feed
